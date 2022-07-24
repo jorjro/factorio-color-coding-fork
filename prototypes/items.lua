@@ -49,7 +49,7 @@ for color,rgb in pairs(config.colors) do
         icon_size = 64,
       },
       {
-        icon = "__color-coding__/graphics/lamp/small-lamp-bulb.png",
+        icon = "__color-coding-plus__/graphics/lamp/small-lamp-bulb.png",
         icon_mipmaps = 4,
         icon_size = 64,
         tint = {

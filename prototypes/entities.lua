@@ -13,7 +13,7 @@ for color,rgb in pairs(config.colors) do
       icon_size = 64,
     },
     {
-      icon = "__color-coding__/graphics/lamp/small-lamp-bulb.png",
+      icon = "__color-coding-plus__/graphics/lamp/small-lamp-bulb.png",
       icon_mipmaps = 4,
       icon_size = 64,
       tint = {
@@ -24,6 +24,12 @@ for color,rgb in pairs(config.colors) do
       }
     }
   }
+  lamp.map_color = {
+    r = 0.6 + (rgb.player_color["r"] * 0.4),
+    g = 0.6 + (rgb.player_color["g"] * 0.4),
+    b = 0.6 + (rgb.player_color["b"] * 0.4),
+    a = 1
+  }
   lamp.icon = nil
   lamp.icon_mipmaps = nil
   lamp.icon_size = nil
@@ -32,7 +38,7 @@ for color,rgb in pairs(config.colors) do
   lamp.picture_off = {
     layers = {
       {
-        filename = "__color-coding__/graphics/lamp/lamp.png",
+        filename = "__color-coding-plus__/graphics/lamp/lamp.png",
         priority = "high",
         width = 42,
         height = 36,
@@ -42,7 +48,7 @@ for color,rgb in pairs(config.colors) do
         shift = util.by_pixel(0,3),
         hr_version =
         {
-          filename = "__color-coding__/graphics/lamp/hr-lamp.png",
+          filename = "__color-coding-plus__/graphics/lamp/hr-lamp.png",
           priority = "high",
           width = 83,
           height = 70,
@@ -54,7 +60,7 @@ for color,rgb in pairs(config.colors) do
         }
       },
       {
-        filename = "__color-coding__/graphics/lamp/lamp-bulb.png",
+        filename = "__color-coding-plus__/graphics/lamp/lamp-bulb.png",
         priority = "high",
         width = 42,
         height = 36,
@@ -64,7 +70,7 @@ for color,rgb in pairs(config.colors) do
         shift = util.by_pixel(0,3),
         hr_version =
         {
-          filename = "__color-coding__/graphics/lamp/hr-lamp-bulb.png",
+          filename = "__color-coding-plus__/graphics/lamp/hr-lamp-bulb.png",
           priority = "high",
           width = 83,
           height = 70,
@@ -94,6 +100,12 @@ for color,rgb in pairs(config.colors) do
         a = rgb.player_color["a"],
       }
     }
+  }
+  wall.map_color = {
+    r = (rgb.player_color["r"] * 0.25),
+    g = (rgb.player_color["g"] * 0.25),
+    b = (rgb.player_color["b"] * 0.25),
+    a = 1
   }
   wall.icon = nil
   wall.icon_mipmaps = nil

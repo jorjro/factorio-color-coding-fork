@@ -1,4 +1,4 @@
-# factorio-color-coding-plus
+# factorio-color-coding-fork
 
 Color-coded indicator lamps, tiles and walls, which can be researched after their base technologies are unlocked.
 

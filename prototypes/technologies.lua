@@ -6,7 +6,7 @@ local function tech(name,prereq,count,time,order,unlocks)
   local t = {
     type = "technology",
     name = name,
-    icon = "__color-coding__/graphics/"..name..".png",
+    icon = "__color-coding-plus__/graphics/"..name..".png",
     icon_size = 128,
     prerequisites = prereq,
     unit = {count=count, ingredients={{"automation-science-pack",1},{"logistic-science-pack",1}}, time=time},
